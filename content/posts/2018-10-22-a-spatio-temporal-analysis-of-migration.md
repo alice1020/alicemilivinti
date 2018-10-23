@@ -1,13 +1,12 @@
 ---
-title: A Spatio-Temporal Analysis of Migration
-author: Alice
+title: "A Spatio-Temporal Analysis of Migration"
+author: "Alice"
 date: '2018-10-22'
 slug: a-spatio-temporal-analysis-of-migration
-categories: []
 tags: []
-thumbnail: path/thumbnail.jpg
+categories: []
+mathjax : true
 ---
-
 
 
 I know, the title sounds intriguing ~~boring~~ and in effect it is. 
@@ -26,20 +25,25 @@ How do I apply Spatial Statistics to the migration context? My interest is to ac
 Have the migration literature completely forgotten about the interdependence between migratory flows? Not really. In order to avoid the presence of interdependence between migration flows, the economic migration literature estimated the migration ratios, rather than the number of migrants. Migration ratio is the number of people moving from one origin to one destination divided by the total population of the origin (movers / stayers). Theoretically, this would have guarantee the independence under some specific assumptions. However, in these circumstances, what is estimated is not the number of migrants, but the percentage of migrants in the entire population. I was unsatisfied with this option since I wanted to predict the number of migrants. With migration shares everything gets more complicated since you need to predict both the total population as well as the movers.  
 I thought that, instead of insuring the independence among migration ratios, I would have rather tried to model the interdependence of migration flows through spatial models. For those who like equations (like me) my final poetic expression is:  
 
-$$y_{it} = \gamma y_{it-1} + \beta' X_{it-2} + \lambda \sum\limits_{j \neq i} w_{ij} y_{jt} + \pi\sum\limits_{j \neq i} w_{ij} y_{jt-1} + \varrho' \sum\limits_{j \neq i} w_{ij} X_{jt-2} + \alpha_i + \epsilon_{it}, \\
-\quad \epsilon_{it}   \sim iid(0, \sigma^2)$$
+$$
+y\_{it} = \gamma y\_{it-1} + \beta' X\_{it-2} + \lambda \sum\limits\_{j \neq i} w\_{ij} y\_{jt} + \pi\sum\limits\_{j \neq i} w\_{ij} y\_{jt-1} + \varrho' \sum\limits\_{j \neq i} w\_{ij} X\_{jt-2} + \alpha\_i + \epsilon\_{it}, \\
+\quad \epsilon\_{it}   \sim iid(0, \sigma^2)
+$$
 
-where, the dependent variable $y_{it}$ is the value of immigration from the origin country $i$ to the Switzerland. The first element on the right hand side of the estimation equation, $y_{it-1}$ is the lagged value of immigration from country $i$ to Switzerland at time $t-1$ since migration is a path-dependent process. $X_{it-2}$ is a vector of country and time specific variables lagged to $t-2$ to deal with potential endogeneity. $y_{jt}$ is the number of migrants moving from a neighbouring origin country $j$ to Switzerland at time $t$ and $y_{jt-1}$ is the corresponding autoregressive term. Finally,  $X_{jt-2}$ is the vector of exogenous variables of country $j$.
-The error term is composed by $\alpha_i$, the unit-specific effect, $\alpha_{t}$, the time-specific effect and $\epsilon_{it}$, the random noise. 
+where, the dependent variable `$y\_{it}$` is the value of immigration from the origin country $i$ to the Switzerland. The first element on the right hand side of the estimation equation, $y\_{it-1}$ is the lagged value of immigration from country $i$ to Switzerland at time $t-1$ since migration is a path-dependent process. $X\_{it-2}$ is a vector of country and time specific variables lagged to $t-2$ to deal with potential endogeneity. $y\_{jt}$ is the number of migrants moving from a neighbouring origin country $j$ to Switzerland at time $t$ and $y\_{jt-1}$ is the corresponding autoregressive term. Finally,  $X\_{jt-2}$ is the vector of exogenous variables of country $j$.
+The error term is composed by $\alpha\_i$, the unit-specific effect, $\alpha\_{t}$, the time-specific effect and $\epsilon\_{it}$, the random noise. 
 
 # Results
-Results support the initial intuition since not only have spatial coefficients been demonstrated to be significant, but also spatial model predictions have outperformed the established dynamic one in terms of root mean squared forecast errors (RMSFE) and mean absolute prediction error (MAPE). In particular, the importance of the lagged spatial autoregressive endogenous variable ($y_{jt−1}$ ) emerged over the one of the lagged dependent variable ($y_{it−1}$). 
+Results support the initial intuition since not only have spatial coefficients been demonstrated to be significant, but also spatial model predictions have outperformed the established dynamic one in terms of root mean squared forecast errors (RMSFE) and mean absolute prediction error (MAPE). In particular, the importance of the lagged spatial autoregressive endogenous variable ($y\_{jt−1}$ ) emerged over the one of the lagged dependent variable ($y\_{it−1}$). 
 Although the evolution of migration dynamics remains highly volatile, the analysis has tried to show the importance not only of path-dependency, but also of cross-countries spillovers.
 
 
 ## Poster presentation
 A brief visualization of the research (not the most updated version of the article). 
-![](/home/alice/Documents/WebSite/alicemilivinti/content/images/PosterSiteVisit.jpg)
+![](/home/alice/Documents/WebSite/alicemilivinti/static/images/PosterSiteVisit.jpg)
+
+
+
 
 
 [Poster PDF](https://drive.google.com/open?id=1EhV6g9F8WJrAqtlxPD9on1bIN-G4wfuu)
@@ -50,6 +54,3 @@ All the details can be found in the article:
 [Published Article](https://link.springer.com/article/10.1007%2Fs00181-018-1514-8)
 
 [Manuscript PDF](https://drive.google.com/open?id=1ncs-Ok4pFMMKjqHaD5uclmA7LDEQoy5c)
-
-
-

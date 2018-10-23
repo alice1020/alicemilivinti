@@ -1,0 +1,9 @@
+---
+title: A Spatio-Temporal Analysis of Miration
+author: Alice
+date: '2018-10-22'
+slug: a-spatio-temporal-analysis-of-miration
+categories: []
+tags: []
+thumbnail: path/thumbnail.jpg
+---
