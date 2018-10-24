@@ -27,7 +27,7 @@ custom_css = "/static/css/custom.css"
 #  youtube = "Your YouTube username"
   linkedin = "alicemilivinti"
   # Disqus shortname
-  disqus = "aliceinataland"
+  disqus = "aliceindataland"
   # Google Analytics API key.
   ga_api_key = "UA-119389886-1"
   author = "Alice Milivinti"
