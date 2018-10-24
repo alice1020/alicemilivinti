@@ -14,7 +14,7 @@ I am not an expert in anything, but I am trying to become a pro in Google search
 
 At the moment I am finishing my journey in the academic world ~~currently unemployed~~. I will always be grateful to the Swiss Federal Science Foundation to finance my PhD and let me learn so much, but at the moment I feel academia is not the future I am looking for. It is a world a bit detached from reality and with a lot established intellectual narcissism. And even tough I am ~~relatively~~ narcissist myself, I do not feel that is the right place for me. At least now.  
 
-I love to try food food and wine I have never tried before, running, mountain sports, mornings, tea, breakfasts at home.
+I love to try food and wine I have never tried before, running, mountain sports, mornings, tea, breakfasts at home.
 
 
 #### FAQ I ask myself

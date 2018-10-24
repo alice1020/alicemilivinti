@@ -22,7 +22,7 @@ The adjective *spatial* reminds of geography that is where spatial statistics ha
 # When do we apply Spatial Statistics?
 Most of the time it is applied to macro dataset, which have few units observed over a relatively long time period. A common example is when cross-sectional units are counties or industries. Micro datasets, instead, usually have a lot of IDs observed for a relatively short period of time. It is intuitive to think that two countries which share the same languages, are more likely to influence each other rather than two people who speak the same language.  
 
-# The Migraton Context
+# The Migration Context
 How do I apply Spatial Statistics to the migration context? My interest is to accurately predict the number of inflows to Switzerland from different origin countries. Specifically, I want to compare spatial and non spatial models to check if the negligence of a correct treatment of the spatial dependence would have importantly bias the estimates. 
 
 # My Contribution
