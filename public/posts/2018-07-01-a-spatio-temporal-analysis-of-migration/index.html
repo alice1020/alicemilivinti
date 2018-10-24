@@ -4,16 +4,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   
-  <title>About me</title>
-  <meta property="og:title" content="About me" />
-  <meta name="twitter:title" content="About me" />
+  <title>A Spatio-Temporal Analysis of Migration</title>
+  <meta property="og:title" content="A Spatio-Temporal Analysis of Migration" />
+  <meta name="twitter:title" content="A Spatio-Temporal Analysis of Migration" />
   
 
+  
+  <meta name="description" content="Is spatial dependence important in predicting human migration flows?">
+  <meta property="og:description" content="Is spatial dependence important in predicting human migration flows?">
+  <meta name="twitter:description" content="Is spatial dependence important in predicting human migration flows?">
   
 
   <meta name="author" content="Alice Milivinti"/>
   <meta property="og:site_name" content="Alice in Dataland" />
-  <meta property="og:url" content="/about/" />
+  <meta property="og:url" content="/posts/2018-07-01-a-spatio-temporal-analysis-of-migration/" />
 
   
   <meta name="twitter:card" content="summary" />
@@ -49,12 +53,12 @@
 
 <article class="p-article">
   <header>
-    <h1>About me</h1>
+    <h1>A Spatio-Temporal Analysis of Migration</h1>
     <div>
       <div class="c-time">
         Posted on
-        <time datetime="2018-10-19T00:00:00Z">
-          Oct 19, 2018
+        <time datetime="2018-10-22T00:00:00Z">
+          Oct 22, 2018
         </time>
       </div>
       
@@ -62,26 +66,46 @@
   </header>
   
   <section id="js-article" class="p-article__body">
-    
-
-<p><img src="/home/alice/Documents/WebSite/alicemilivinti/content/images/IMGP8529.JPG" alt="This is me" /></p>
-
-<p>My name is Alice and if I have to describe myself in one line I would say that I get bored quickly and I <del>like to</del> question everything (I am a woman, you know).<br />
-Linear career paths are not my cup of tea. I was not born with a specific dream. When I was little I did not want to become a doctor, even though some family members have tried to push me into that, or an astronaut. I have not equally felt particularly gifted for anything. I would say I am more perseverant than gifted.</p>
-
-<p>That&rsquo;s maybe why I went to a language high school, then I moved from a BA in International Relations, to a Msc in Economics and finally to a PhD in Demography. I have always felt a bit out of place during my formation, but I liked it. It was challenging my <em>forma mentis</em>. So, I became &ldquo;interdisciplinary&rdquo; by accident, maybe because I have always been more interested in topics rather than in subjects. I usually ask myself <em>why</em> rather than <em>how</em> and I like to look at different <em>hows</em> to try answering the <em>whys</em> I become obsessed with. Ah yes, because I am not only perseverant, but also unbelievably stubborn.</p>
-
-<p>I am  not an expert in anything since I mainly rely on Google in my daily life. However, but a common thread within my education track is my interest Applied Statistics and Data Analysis. I felt that this discipline could allow me the freedom to explore the largest number of topics I want. So I am gently moving towards informatic-statistical languages, so far mainly R.</p>
-
-<p>At the moment I am finishing my journey in the academic world <del>unemployed in 2 month</del>. I will always be grateful to the Swiss Federal Science Foundation to finance my PhD and let me learn so much, but at the moment I feel academia is not the future I am looking for. It is a world a bit detached from reality and with a lot established intellectual narcissism. And even tough I have a <del>relatively</del> big ego, I don not feel that is the right place for me. At least now.</p>
-
-<p>I love to try food food and wine I have never tried before, running, mountain sports, mornings, tea, breakfasts at home.</p>
-
-<h4 id="faq-i-ask-myself">FAQ I ask myself</h4>
-
-<p>How could living and working was possible before Google?</p>
-
-<p>Was Mark Twain right: &ldquo;A pessimist is a well-informed optimist&rdquo;?</p>
+    <p>I know, the title sounds intriguing <del>boring</del> and in effect it is.
+When I started my PhD I did not even know what spatial statistics exactly was. It was my inspiring colleague, Dr. Giacomo Benini, who introduced me to that. My PhD is in Demography, more precisely on migration studies. So why should not I apply some spatial statistics to human migration movements? Most of the time I think I have come up with a brilliant idea someone else has already had it. I am sure it is a common feeling. You honestly did not know that another person has thought about it before and you are so annoyed by discovering that you are just the N<em>th</em> person with the same intuition. So with an already disillusioned spirit I started my literature review in search of what has been already done on terms of spatial statistics and human migration data. Believe it or not, for once, I found very little. When you find little already done about your idea you start thinking that what you have in mind is impossible, and this was my second thought. However, you can guess how the story ends and if I am writing a post, it means that I was somehow capable to create something out of that first idea.</p>
+<div id="what-is-spatial-statistics-about" class="section level1">
+<h1>What is Spatial Statistics about?</h1>
+<p>The adjective <em>spatial</em> reminds of geography that is where spatial statistics has first found most of its applications. It originates form Tobler’s First Law of Geography: <em>“Everything is related to everything else, but near things are more related than distant things.”</em>. The concept of Tobler’s Law is that closer things have more in common, maybe because they influence each other through spillover effect. Nevertheless, the meaning of <em>closer</em> does not have to rely exclusively on geographical distance. It can be anything that two things have in common, such as states with the same spoken languages. Therefore, spatial statistics is all about cross-sectional dependence, that is the influence one cross-sectional unit has on another one. Said differently, it is about trying to take into account spillovers which, if neglects, might bias your estimates.</p>
+</div>
+<div id="when-do-we-apply-spatial-statistics" class="section level1">
+<h1>When do we apply Spatial Statistics?</h1>
+<p>Most of the time it is applied to macro dataset, which have few units observed over a relatively long time period. A common example is when cross-sectional units are counties or industries. Micro datasets, instead, usually have a lot of IDs observed for a relatively short period of time. It is intuitive to think that two countries which share the same languages, are more likely to influence each other rather than two people who speak the same language.</p>
+</div>
+<div id="the-migraton-context" class="section level1">
+<h1>The Migraton Context</h1>
+<p>How do I apply Spatial Statistics to the migration context? My interest is to accurately predict the number of inflows to Switzerland from different origin countries. Specifically, I want to compare spatial and non spatial models to check if the negligence of a correct treatment of the spatial dependence would have importantly bias the estimates.</p>
+</div>
+<div id="my-contribution" class="section level1">
+<h1>My Contribution</h1>
+<p>Have the migration literature completely forgotten about the interdependence between migratory flows? Not really. In order to avoid the presence of interdependence between migration flows, the economic migration literature estimated the migration ratios, rather than the number of migrants. Migration ratio is the number of people moving from one origin to one destination divided by the total population of the origin (movers / stayers). Theoretically, this would have guarantee the independence under some specific assumptions. However, in these circumstances, what is estimated is not the number of migrants, but the percentage of migrants in the entire population. I was unsatisfied with this option since I wanted to predict the number of migrants. With migration shares everything gets more complicated since you need to predict both the total population as well as the movers.<br />
+I thought that, instead of insuring the independence among migration ratios, I would have rather tried to model the interdependence of migration flows through spatial models. For those who like equations (like me) my final poetic expression is:</p>
+<p><span class="math display">\[y_{it} = \gamma y_{it-1} + \beta&#39; X_{it-2} + \lambda \sum\limits_{j \neq i} w_{ij} y_{jt} + \pi\sum\limits_{j \neq i} w_{ij} y_{jt-1} + \varrho&#39; \sum\limits_{j \neq i} w_{ij} X_{jt-2} + \alpha_i + \epsilon_{it}, \\
+\quad \epsilon_{it}   \sim iid(0, \sigma^2)\]</span></p>
+<p>where, the dependent variable <span class="math inline">\(y_{it}\)</span> is the value of immigration from the origin country <span class="math inline">\(i\)</span> to the Switzerland. The first element on the right hand side of the estimation equation, <span class="math inline">\(y_{it-1}\)</span> is the lagged value of immigration from country <span class="math inline">\(i\)</span> to Switzerland at time <span class="math inline">\(t-1\)</span> since migration is a path-dependent process. <span class="math inline">\(X_{it-2}\)</span> is a vector of country and time specific variables lagged to <span class="math inline">\(t-2\)</span> to deal with potential endogeneity. <span class="math inline">\(y_{jt}\)</span> is the number of migrants moving from a neighbouring origin country <span class="math inline">\(j\)</span> to Switzerland at time <span class="math inline">\(t\)</span> and <span class="math inline">\(y_{jt-1}\)</span> is the corresponding autoregressive term. Finally, <span class="math inline">\(X_{jt-2}\)</span> is the vector of exogenous variables of country <span class="math inline">\(j\)</span>.
+The error term is composed by <span class="math inline">\(\alpha_i\)</span>, the unit-specific effect, <span class="math inline">\(\alpha_{t}\)</span>, the time-specific effect and <span class="math inline">\(\epsilon_{it}\)</span>, the random noise.</p>
+</div>
+<div id="results" class="section level1">
+<h1>Results</h1>
+<p>Results support the initial intuition since not only have spatial coefficients been demonstrated to be significant, but also spatial model predictions have outperformed the established dynamic one in terms of root mean squared forecast errors (RMSFE) and mean absolute prediction error (MAPE). In particular, the importance of the lagged spatial autoregressive endogenous variable (<span class="math inline">\(y_{jt−1}\)</span> ) emerged over the one of the lagged dependent variable (<span class="math inline">\(y_{it−1}\)</span>).
+Although the evolution of migration dynamics remains highly volatile, the analysis has tried to show the importance not only of path-dependency, but also of cross-countries spillovers.</p>
+<div id="poster-presentation" class="section level2">
+<h2>Poster presentation</h2>
+<p>A brief visualization of the research (not the most updated version of the article).
+<img src="/home/alice/Documents/WebSite/alicemilivinti/static/images/PosterSiteVisit.jpg" /></p>
+<p><a href="https://drive.google.com/open?id=1EhV6g9F8WJrAqtlxPD9on1bIN-G4wfuu">Poster PDF</a></p>
+</div>
+<div id="article" class="section level2">
+<h2>Article</h2>
+<p>All the details can be found in the article:</p>
+<p><a href="https://link.springer.com/article/10.1007%2Fs00181-018-1514-8">Published Article</a></p>
+<p><a href="https://drive.google.com/open?id=1ncs-Ok4pFMMKjqHaD5uclmA7LDEQoy5c">Manuscript PDF</a></p>
+</div>
+</div>
 
   </section>
   <footer>
@@ -102,11 +126,11 @@ Linear career paths are not my cup of tea. I was not born with a specific dream.
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
           
-          <a href="/posts/2018-07-01-a-spatio-temporal-analysis-of-migration/">Newer</a>
           
         </div>
         <div class="c-pagination__older">
           
+          <a href="/about/">Older</a>
           
         </div>
       </div>
