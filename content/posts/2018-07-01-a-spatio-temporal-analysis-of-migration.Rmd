@@ -42,7 +42,7 @@ Although the evolution of migration dynamics remains highly volatile, the analys
 
 ## Poster presentation
 A brief visualization of the research (not the most updated version of the article). 
-![](/home/alice/Documents/WebSite/alicemilivinti/static/images/PosterSiteVisit.jpg)
+![](/img/PosterSiteVisit.jpg)
 
 
 [Poster PDF](https://drive.google.com/open?id=1EhV6g9F8WJrAqtlxPD9on1bIN-G4wfuu)
