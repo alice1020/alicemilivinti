@@ -1,8 +1,15 @@
 ---
-title: "COVID-unemployment-and-income-supports"
+title: "COVID-19: Unemployment and Income Supports"
 author: "Alice Milivinti"
-date: "6/1/2020"
-output: html_document
+date: "2018-10-22"
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+  latex_engine: xelatex
+draft: no
+showonlyimage: yes
+description: Is spatial dependence important in predicting human migration flows?
 ---
 
 
