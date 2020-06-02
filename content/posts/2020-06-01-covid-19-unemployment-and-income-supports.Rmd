@@ -1,17 +1,12 @@
 ---
-title: "COVID-19: Unemployment and Income Supports"
-author: "Alice Milivinti"
-date: "2020-06-01"
-output:
-  html_document: default
-  pdf_document: default
-  word_document: default
-  latex_engine: xelatex
-draft: no
-showonlyimage: yes
-description: 
+title: 'COVID-19: Unemployment and Income Supports'
+author: Alice Milivinti
+date: '2020-06-01'
+slug: covid-19-unemployment-and-income-supports
+categories: []
+tags: []
+thumbnail: path/thumbnail.jpg
 ---
-
 
 
 ## Data Sources: Census Current Population Survey (CPS)

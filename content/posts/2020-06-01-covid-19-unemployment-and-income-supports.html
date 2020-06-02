@@ -1,0 +1,207 @@
+---
+title: 'COVID-19: Unemployment and Income Supports'
+author: Alice Milivinti
+date: '2020-06-01'
+slug: covid-19-unemployment-and-income-supports
+categories: []
+tags: []
+thumbnail: path/thumbnail.jpg
+---
+
+
+
+<div id="data-sources-census-current-population-survey-cps" class="section level2">
+<h2>Data Sources: Census Current Population Survey (CPS)</h2>
+<p>Source files available: <a href="https://github.com/alice1020/COVID-unemployment-and-income-supports" class="uri">https://github.com/alice1020/COVID-unemployment-and-income-supports</a></p>
+<p>Data of the Current Population Survey has been download from: <a href="https://cps.ipums.org/cps/index.shtml" class="uri">https://cps.ipums.org/cps/index.shtml</a> (registration required).</p>
+<p>The codebooks for the extraction are the files:</p>
+<ol style="list-style-type: decimal">
+<li><p>CPS_19-01_20-04_Extr_Codebook.xml for the core set of questions for monthly samples from 01-2019 to 04-2020.</p></li>
+<li><p>ASEC_2019_Extr_Codebook.xml for the 2019 Annual Social and Economic Supplement (ASEC) of 03-2019.</p></li>
+</ol>
+<p>The Current Population Survey has monthly data for a core set of questions, which include employment status, occupation, geographical information, etc. Extensive data about socio-economic varibales, such as earnings, Earned Income Tax Credit (EITC), health insurance, etc. are colleceted once a year (March) by the Social and Economic Supplement (ASEC) module.
+CPS is a survey which has basically been used for the analysis of cross-sectional data. It has a sampling scheme defined as 4-8-4. One household stays in the sample for max. 16 months (4+8+4). The household is interviewed during each of the first 4 months after entering the survey, followed by 8 without interview. The household is then interviewd again for 4 consequitive month, one year (4+8) after its first wave in order to match the seasonality.</p>
+<p>The following figure visualizes the longitudinal structure of the survey. Our data ample cover the time span from January 2019 to April 2020. Each line represent an individual longitudinal record. Wave March 2019 is my master wave since it is the most recent information about EICT and earnigns we have. Gray represents when the individual is out of the CPS’s sample.</p>
+<center>
+<img src="/img/COVID-19%20EITC/Sequence_Analysis.png" alt="Sequence Analysis" />
+<strong>Fig. 1:</strong> Sequence Analysis of the Employment Status from January 2019 to April 2020.
+</center>
+<center>
+<img src="/img/COVID-19%20EITC/Legend.png" alt="Employment Status Legend" />
+</center>
+<center>
+<img src="/img/COVID-19%20EITC/Sequence_Analysis_Density.png" alt="Employment Status Frequencies" />
+<strong>Fig. 2:</strong> Sequence Analysis of the Employment Status Frequencies from January 2019 to April 2020 .
+</center>
+</div>
+<div id="statistical-exploration" class="section level2">
+<h2>Statistical Exploration</h2>
+<div id="individual-level-logitudinal-analysis" class="section level3">
+<h3>Individual Level Logitudinal Analysis</h3>
+<p>We are interested in analysing the effects of COVID-19 on the employment status with a focus on the Earned Income Tax Credit (EITC). If we want to procede at an individual/household level our sample size for individuals and households obseved both in March 2019 (ASEC wave) and April 2020. It corresponds to 19,013 individuals and 10,456 households, which is visually mirrored in the three waves at the top of of Fig. 1. Among those a sub-sample of 4,700 individuals grouped in 3,984 households are part of the labour force. At the end, ~9.3% of the households in the sub-sample have received EITC.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th># Obs. 03-19 &amp; 04-20</th>
+<th>In the Labor Force</th>
+<th>with EITC &gt; 0</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Individual</td>
+<td>19,013</td>
+<td>4,700</td>
+<td>370</td>
+</tr>
+<tr class="even">
+<td>Household</td>
+<td>10,456</td>
+<td>3,984</td>
+<td>363</td>
+</tr>
+</tbody>
+</table>
+<center>
+<img src="/img/COVID-19%20EITC/EITC_Emp_Sub.png" />
+<strong>Fig. 3:</strong> EITC 2019 and Employment status in April 2020
+</center>
+<p>Codes available in the file: Disaggregated_analysis.R</p>
+</div>
+<div id="aggregate-occupational-level-analysis" class="section level3">
+<h3>Aggregate Occupational Level Analysis</h3>
+<p>We analaze the CPS data by aggregating over the occupational categories. Our cross-sectional unit becomes the occupational category. The data structure becomes the following</p>
+<table>
+<thead>
+<tr class="header">
+<th>Occupation</th>
+<th>Time</th>
+<th>% Unempl</th>
+<th>Ave. Earn</th>
+<th>Ave. EITC</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>2020-02</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>2020-03</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>2020-04</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>2020-02</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>2020-03</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>2020-04</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>.</td>
+<td>2020-02</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>.</td>
+<td>2020-03</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>.</td>
+<td>2020-04</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>N</td>
+<td>2020-02</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>N</td>
+<td>2020-03</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>N</td>
+<td>2020-04</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="extensive-margin-employment-vs-unemployment" class="section level3">
+<h3>Extensive Margin: Employment vs Unemployment</h3>
+<center>
+<img src="/img/COVID-19%20EITC/Empl_Occ.png" />
+<strong>Fig. 4:</strong> % Difference in employment between February and April 2020 by occupational category.
+</center>
+<center>
+<img src="/img/COVID-19%20EITC/W_Dist_Rout.png" />
+<strong>Fig. 5:</strong> Wage Distribution by Occupation.
+</center>
+<center>
+<img src="/img/COVID-19%20EITC/Empl_Rout.png" />
+<strong>Fig 6:</strong> % Difference in employment between February and April 2020 for by wage quartile.
+</center>
+</div>
+<div id="intensive-margin-hours-worked" class="section level3">
+<h3>Intensive Margin: Hours Worked</h3>
+<center>
+<img src="/img/COVID-19%20EITC/Hrs_Occ.png" />
+<strong>Fig. 7:</strong> Difference in hours usually worked per week at all jobs between February and April 2020 by occupation (unemployed with hrs = 0 are included).
+</center>
+<center>
+<img src="/img/COVID-19%20EITC/Hrs_Occ_Emp.png" />
+<strong>Fig. 8:</strong> Difference in hours usually worked per week at all jobs between February and April 2020 by occupation among employed only.
+</center>
+</div>
+<div id="eitc-by-occupational-category" class="section level3">
+<h3>EITC by Occupational Category</h3>
+<center>
+<img src="/img/COVID-19%20EITC/EITC_Occ.png" />
+<strong>Fig. 9:</strong> Average EITC percevied in 2019 vs % Difference in employment between February and April 2020 by occupational category.
+</center>
+<p>Codes available in the file: Visualizations.R</p>
+</div>
+</div>

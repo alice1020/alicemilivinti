@@ -1,14 +1,11 @@
 ---
-title: "A Spatio-Temporal Analysis of Migration"
-author: "Alice Milivinti"
-date: "2018-10-22"
-output:
-  html_document: default
-  pdf_document: default
-  word_document: default
-  latex_engine: xelatex
-draft: no
-showonlyimage: yes
+title: 'A Spatio-Temporal Analysis of Migration'
+author: Alice Milivinti
+date: '2018-10-22'
+slug: a-spatio-temporal-analysis-of-migration
+categories: []
+tags: []
+thumbnail: path/thumbnail.jpg
 description: Is spatial dependence important in predicting human migration flows?
 ---
 
