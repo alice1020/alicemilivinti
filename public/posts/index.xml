@@ -18,13 +18,11 @@
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/posts/covid-19-unemployment-and-income-supports/</guid>
-      <description>This is a collaboration with
+      <description>This is a collaboration with Julian Bernado, Rebecca Hasdell and David Rehkopf.
 Data Sources: Census Current Population Survey (CPS) Source files available: https://github.com/alice1020/COVID-unemployment-and-income-supports
-Data of the Current Population Survey has been download from: https://cps.ipums.org/cps/index.shtml (registration required).
+Data comes from the Current Population Survey, which have been download from: https://cps.ipums.org/cps/index.shtml (registration required).
 The codebooks for the extraction are the files:
-CPS_19-01_20-04_Extr_Codebook.xml for the core set of questions for monthly samples from 01-2019 to 04-2020.
- ASEC_2019_Extr_Codebook.xml for the 2019 Annual Social and Economic Supplement (ASEC) of 03-2019.
-  The Current Population Survey has monthly data for a core set of questions, which include employment status, occupation, geographical information, etc.</description>
+CPS_19-01_20-04_Extr_Codebook.xml for the core set of questions for monthly samples from 01-2019 to 04-2020. Among the variables listed in CPS_19-01_20-04_Extr_Codebook.xml, we selected: YEAR, MONTH, CPSIDP, CPSID, COUNTY, STATECENSUS, STATEFIP, REGION, CBSASZ, LABFORCE, OCC, EDUC99, FAMINC, EMPSTAT, UHRSWORKT.</description>
     </item>
     
     <item>
