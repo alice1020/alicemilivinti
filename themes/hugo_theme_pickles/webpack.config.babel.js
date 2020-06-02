@@ -1,11 +1,13 @@
-const config = require('./config')
-const path = require('path')
-const webpack = require('webpack')
+import config from './config'
+import path from 'path'
+import webpack from 'webpack'
 
-module.exports = {
+export default {
   mode: config.envProduction ? 'production' : 'development',
   devtool: '',
-  entry: [path.join(__dirname, `${config.tasks.webpack.src}`)],
+  entry: [
+    path.join(__dirname, `${config.tasks.webpack.src}`)
+  ],
   output: {
     path: path.join(__dirname, config.tasks.webpack.dest),
     filename: config.tasks.webpack.filename

@@ -5,7 +5,10 @@
     <h1>{{ .Title }}</h1>
     <div>
       <div class="c-time">
-        {{ partial "timestamp.html" . }}
+        Posted on
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+          {{ .Date.Format "Jan 2, 2006" }}
+        </time>
       </div>
       {{ range .Params.tags }}
       <a href="{{ $baseurl }}/tags/{{ . | urlize }}" class="c-tag">{{ . }}</a>
@@ -19,7 +22,7 @@
     {{ .Content }}
   </section>
   <footer>
-    {{ with ($.Param "disqus") }}
+    {{ with .Site.Params.disqus }}
     <div id="disqus_thread"></div>
     <script>
     var disqus_shortname = '{{ . }}';
@@ -35,14 +38,14 @@
     <nav class="p-pagination c-pagination">
       <div class="c-pagination__ctrl">
         <div class="c-pagination__newer">
-          {{ if .NextInSection }}
-          <a href="{{ .NextInSection.Permalink }}">Newer</a>
+          {{ if .Prev }}
+          <a href="{{ .Prev.Permalink }}">Newer</a>
           {{ else }}
           {{ end }}
         </div>
         <div class="c-pagination__older">
-          {{ if .PrevInSection }}
-          <a href="{{ .PrevInSection.Permalink }}">Older</a>
+          {{ if .Next }}
+          <a href="{{ .Next.Permalink }}">Older</a>
           {{ else }}
           {{ end }}
         </div>

@@ -19,10 +19,9 @@ echo ".bowerrc
 .gitignore
 .babelrc
 ./images
-webpack.config.js
+webpack.config.babel.js
 bin
-gulpfile.js
-.prettierignore
+gulpfile.babel.js
 config.js
 node_modules
 content
