@@ -13,7 +13,7 @@ This is a collaboration with Julian Bernado, Rebecca Hasdell and David Rehkopf.
 
 Source files available: https://github.com/alice1020/COVID-unemployment-and-income-supports
 
-Data comes from the Current Population Survey, which have been download from: https://cps.ipums.org/cps/index.shtml (registration required).
+Data come from the Current Population Survey, which have been download from: https://cps.ipums.org/cps/index.shtml (registration required).
 
 The codebooks for the extraction are the files:
 
