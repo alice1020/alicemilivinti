@@ -64,14 +64,12 @@ At an individual/household level the sample size for individuals and households 
 </center>
 
 
-Codes available for this part are available in the file: Disaggregated_analysis.R
+Codes available for this part are available in the file: [Disaggregated_Analysis.R](https://github.com/alice1020/COVID-unemployment-and-income-supports/blob/master/Disaggregated_Analysis.R)
 
 
 ### Aggregate Occupational Level Analysis
 
 We analaze the CPS data by aggregating over the occupational categories. Our cross-sectional unit becomes the occupational category. The data structure becomes the following
-
-
 
 | Occupation |   Time  | % Unempl | Ave. Earn | Ave. EITC | 
 |------------|---------|--------- |-----------|-----------|
@@ -89,7 +87,10 @@ We analaze the CPS data by aggregating over the occupational categories. Our cro
 |      N     | 2020-04 |          |           |           |
 
 
-### Extensive Margin: Employment vs Unemployment
+### Employment vs Unemployment
+
+We explore the impact of COVID-19 on employment. 
+
 <center>
 ![](/img/COVID-19-EITC/Empl_Occ.png){}
 **Fig. 4:** % Difference in employment between February and April 2020 by occupational category.
@@ -105,7 +106,7 @@ We analaze the CPS data by aggregating over the occupational categories. Our cro
 **Fig 6:** % Difference in employment between February and April 2020 for by wage quartile. 
 </center>
 
-### Intensive Margin: Hours Worked
+###  Hours Worked
 
 <center>
 ![](/img/COVID-19-EITC/Hrs_Occ.png){}
@@ -124,7 +125,8 @@ We analaze the CPS data by aggregating over the occupational categories. Our cro
 **Fig. 9:** Average EITC percevied in 2019 vs % Difference in employment between February and April 2020 by occupational category.
 </center>
 
-Codes available in the file: Visualizations.R
+Codes available in the file: [Aggregated_Analysis.R](https://github.com/alice1020/COVID-unemployment-and-income-supports/blob/master/Aggregated_Analysis.R)
+
 
   
 
