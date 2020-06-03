@@ -63,7 +63,7 @@ At an individual/household level the sample size for individuals and households 
 </center>
 
 
-Codes available for this part are available in the file: [Disaggregated_Analysis.R](https://github.com/alice1020/COVID-unemployment-and-income-supports/blob/master/Disaggregated_Analysis.R)
+Codes for this part are available in the file: [Disaggregated_Analysis.R](https://github.com/alice1020/COVID-unemployment-and-income-supports/blob/master/Disaggregated_Analysis.R)
 
 
 ### Aggregate Occupational Level Analysis
@@ -123,7 +123,7 @@ We explore the impact of COVID-19 on employment.
 **Fig. 9:** Average EITC perceived in 2019 vs % Difference in employment between February and April 2020 by occupational category.
 </center>
 
-Codes available in the file: [Aggregated_Analysis.R](https://github.com/alice1020/COVID-unemployment-and-income-supports/blob/master/Aggregated_Analysis.R)
+Codes for this part are available in the file: [Aggregated_Analysis.R](https://github.com/alice1020/COVID-unemployment-and-income-supports/blob/master/Aggregated_Analysis.R)
 
 
   
