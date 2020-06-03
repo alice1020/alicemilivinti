@@ -56,6 +56,7 @@ At an individual/household level the sample size for individuals and households 
 | Individual |        19,013        |        4,700       |       370     |         
 | Household  |        10,456        |        3,984       |       363     |
 
+approx. 17% of people who received the EITC in 2019 are experiencing unemployment between Februaru and April 2020.
 
 <center>
 ![](/img/COVID-19-EITC/EITC_Emp_Sub.png){}
