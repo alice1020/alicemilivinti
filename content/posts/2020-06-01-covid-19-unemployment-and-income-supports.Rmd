@@ -5,7 +5,6 @@ date: '2020-06-01'
 slug: covid-19-unemployment-and-income-supports
 categories: []
 tags: []
-thumbnail: path/thumbnail.jpg
 ---
 
 This is a collaboration with Julian Bernado, Rebecca Hasdell and David Rehkopf.
@@ -90,9 +89,8 @@ We analaze the CPS data by aggregating over the occupational categories. Our cro
 ### Employment vs Unemployment
 
 We explore the impact of COVID-19 on employment. 
-
 <center>
-![](/img/COVID-19-EITC/Empl_Occ.png){}
+![](/img/COVID-19-EITC/Empl_Occ.png)
 **Fig. 4:** % Difference in employment between February and April 2020 by occupational category.
 </center>
 
