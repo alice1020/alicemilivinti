@@ -7,27 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Alice Milivinti 2018 powered by Hugo, Pickles</copyright>
-    <lastBuildDate>Mon, 22 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>A Spatio-Temporal Analysis of Migration</title>
-      <link>/post/a-spatio-temporal-analysis-of-migration/</link>
-      <pubDate>Mon, 22 Oct 2018 00:00:00 +0000</pubDate>
+      <title>COVID-19: Unemployment and Income Supports June Wave</title>
+      <link>/post/covid-19-unemployment-and-income-supports-june-wave/</link>
+      <pubDate>Fri, 24 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/a-spatio-temporal-analysis-of-migration/</guid>
-      <description>I know, the title sounds intriguing boring and in effect it is. When I started my PhD I did not even know what spatial statistics exactly was. It was my inspiring colleague, Dr. Giacomo Benini, who introduced me to that. My PhD is in Demography, more precisely on migration studies. So why should not I apply some spatial statistics to human migration movements? Most of the time I think I have come up with a brilliant idea someone else has already had it.</description>
-    </item>
-    
-    <item>
-      <title>A Spatio-Temporal Analysis of Miration</title>
-      <link>/post/a-spatio-temporal-analysis-of-miration/</link>
-      <pubDate>Mon, 22 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/a-spatio-temporal-analysis-of-miration/</guid>
-      <description></description>
+      <guid>/post/covid-19-unemployment-and-income-supports-june-wave/</guid>
+      <description>This is a collaboration with Rebecca Hasdell and David Rehkopf. The post provides an updated analysis to the post COVID-19: Unemployment and Income Supports April Wave by including data available until the June wave of the current Population Survey. For more details please refer to the preius post.
+Statistical Exploration We are interested in analyzing the effects of COVID-19 on the employment status with a focus on the Earned Income Tax Credit (EITC).</description>
     </item>
     
   </channel>

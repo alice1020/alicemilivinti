@@ -1,5 +1,5 @@
 ---
-title: 'COVID-19: Unemployment and Income Supports'
+title: 'COVID-19: Unemployment and Income Supports April Wave'
 author: Alice Milivinti
 date: '2020-06-01'
 slug: covid-19-unemployment-and-income-supports
@@ -9,17 +9,17 @@ tags: []
 
 
 
-<p>This is a collaboration with Rebecca Hasdell and David Rehkopf.</p>
+<p>This is a collaboration with <a href="https://scholar.google.com/citations?user=GP4jjpIAAAAJ&amp;hl=en">Rebecca Hasdell</a> and <a href="https://scholar.google.com/citations?user=85mEA54AAAAJ&amp;hl=en">David Rehkopf</a>.</p>
 <div id="data-sources-census-current-population-survey-cps" class="section level2">
 <h2>Data Sources: Census Current Population Survey (CPS)</h2>
 <p>Source files available: <a href="https://github.com/alice1020/COVID-unemployment-and-income-supports" class="uri">https://github.com/alice1020/COVID-unemployment-and-income-supports</a></p>
 <p>Data come from the Current Population Survey, which have been download from: <a href="https://cps.ipums.org/cps/index.shtml" class="uri">https://cps.ipums.org/cps/index.shtml</a> (registration required).</p>
 <p>The codebooks for the extraction are the files:</p>
 <ol style="list-style-type: decimal">
-<li><p><a href="https://github.com/alice1020/COVID-unemployment-and-income-supports/blob/master/Core_2020_Extr_Codebook.xml">Core_2020_Extr_Codebook.xml</a> for the core set of questions for monthly samples from 01-2019 to 04-2020.
-Variables selected: YEAR, SERIAL, MONTH, HWTFINL, CPSID, ASECFLAG, PERNUM, WTFINL, CPSIDP, EMPSTAT, LABFORCE, OCC, CLASSWKR, UHRSWORKT, UHRSWORK1, UHRSWORK2, AHRSWORKT, AHRSWORK1, AHRSWORK2, EARNWT, HOURWAGE, PAIDHOUR, EARNWEEK, UHRSWORKORG, WKSWORKORG.</p></li>
+<li><p><a href="https://github.com/alice1020/COVID-unemployment-and-income-supports/blob/master/Core_2019_2020_Extr_Codebook.xml">Core_2019_2020_Extr_Codebook.xml</a> for the core set of questions for monthly samples from 01-2019 to 04-2020.
+Variables selected: YEAR, SERIAL, MONTH, HWTFINL, CPSID, ASECFLAG, PERNUM, WTFINL, CPSIDP, FAMSIZE, NCHILD, ELDCH, YNGCH, EMPSTAT, LABFORCE, OCC, CLASSWKR, UHRSWORKT, UHRSWORK1, UHRSWORK2, AHRSWORKT, AHRSWORK1, AHRSWORK2, MARBASECIDP, LNKFW1MWT, LNKFW1YWT, LNKFW8WT, LNKFWMIS45WT, LNKFWMIS14WT, LNKFWMIS58WT, PANLWT, EARNWT, HOURWAGE, PAIDHOUR, EARNWEEK, UHRSWORKORG, WKSWORKORG.</p></li>
 <li><p><a href="https://github.com/alice1020/COVID-unemployment-and-income-supports/blob/master/ASEC_2019_Extr_Codebook.xml">ASEC_2019_Extr_Codebook.xml</a> for the 2019 Annual Social and Economic Supplement (ASEC) of 03-2019.
-Among all the variables we selected: YEAR, SERIAL, MONTH, CPSID, ASECFLAG, ASECWTH, PERNUM, CPSIDP, ASECWT, OCCLY, CLASSWLY, WORKLY, FTOTVAL, INCTOT, INCWAGE, INCLONGJ, OINCBUS, OINCFARM, OINCWAGE, EITCRED.</p></li>
+Among all the variables we selected: YEAR, SERIAL, MONTH, CPSID, ASECFLAG, ASECWTH, MARBASECIDH, ASECOVERH, PERNUM, CPSIDP, ASECWT, OCCLY, CLASSWLY, WORKLY, FTOTVAL, INCTOT, INCWAGE, INCLONGJ, OINCBUS, OINCFARM, OINCWAGE, EITCRED.</p></li>
 </ol>
 <p>The Current Population Survey has monthly data for a core set of questions, which include employment status, occupation, geographical information, etc. Extensive data about socio-economic variables, such as earnings, Earned Income Tax Credit (EITC), health insurance, etc. are collected once a year (March) by the Social and Economic Supplement (ASEC) module.
 CPS is a survey which has basically been used for the analysis of cross-sectional data. It has a sampling scheme defined as 4-8-4. One household stays in the sample for max. 16 months (4+8+4). The household is interviewed during each of the first 4 months after entering the survey, followed by 8 without interview. The household is then interviewed again for 4 consecutive month, one year (4+8) after its first wave in order to match the seasonality.</p>
@@ -29,11 +29,11 @@ CPS is a survey which has basically been used for the analysis of cross-sectiona
 <strong>Fig. 1:</strong> Sequence Analysis of the Employment Status from January 2019 to April 2020.
 </center>
 <center>
-<img src="/img/COVID-19-EITC/Legend.png" alt="Employment Status Legend" />
+<img src="/img/COVID-19-EITC/Legend.png" title="fig:" alt="Employment Status Legend" />
 </center>
 <center>
 <img src="/img/COVID-19-EITC/Sequence_Analysis_Density.png" alt="Employment Status Frequencies" />
-<strong>Fig. 2:</strong> Sequence Analysis of the Employment Status Frequencies from January 2019 to April 2020 .
+<strong>Fig. 2:</strong> Sequence Analysis of the Employment Status Frequencies from January 2019 to z 2020 .
 </center>
 </div>
 <div id="statistical-exploration" class="section level2">
@@ -41,7 +41,7 @@ CPS is a survey which has basically been used for the analysis of cross-sectiona
 <p>We are interested in analyzing the effects of COVID-19 on the employment status with a focus on the Earned Income Tax Credit (EITC).</p>
 <div id="individual-level-longitudinal-analysis" class="section level3">
 <h3>Individual Level Longitudinal Analysis</h3>
-<p>At an individual/household level the sample size for individuals and households observed both in March 2019 (ASEC wave) and April 2020 corresponds to 19,013 individuals and 10,456 households. Among those a sub-sample of 4,700 individuals grouped in 3,984 households are part of the labor force. Visually these are mirrored in the three waves at the top of of Fig. 1. At the end, ~9.3% of the households in the sub-sample have received EITC.</p>
+<p>At an individual/household level the sample size for individuals and households observed both in March 2019 (ASEC wave) and April 2020 corresponds to 19,013 individuals and 10,456 households. Among those a sub-sample of 4,700 individuals grouped in 3,984 households are part of the labor force. Visually these are mirrored in the three waves at the top of of Fig. 1. At the end, ~7% of the households in the sub-sample have received EITC.</p>
 <table>
 <thead>
 <tr class="header">
@@ -66,12 +66,12 @@ CPS is a survey which has basically been used for the analysis of cross-sectiona
 </tr>
 </tbody>
 </table>
-<p>approx. 17% of people who received the EITC in 2019 are experiencing unemployment between Februaru and April 2020.</p>
+<p>Approximately 20% of people who received the EITC in 2019 are experiencing unemployment between February and April 2020.</p>
 <center>
 <img src="/img/COVID-19-EITC/EITC_Emp_Sub_W.png" />
 <strong>Fig. 3:</strong> EITC 2019 and Employment status in April 2020
 </center>
-<p>Codes for this part are available in the file: <a href="https://github.com/alice1020/COVID-unemployment-and-income-supports/blob/master/Disaggregated_Analysis.R">Disaggregated_Analysis.R</a></p>
+<p>Codes for this part are available in the file: <a href="https://github.com/alice1020/COVID-unemployment-and-income-supports/blob/master/Disaggregated_Analysis_April.R">Disaggregated_Analysis_April.R</a></p>
 </div>
 <div id="aggregate-occupational-level-analysis" class="section level3">
 <h3>Aggregate Occupational Level Analysis</h3>
@@ -214,6 +214,6 @@ We explore the impact of COVID-19 on employment.
 <img src="/img/COVID-19-EITC/EITC_Occ.png" />
 <strong>Fig. 10:</strong> Average EITC perceived in 2019 vs % Difference in employment between February and April 2020 by occupational category.
 </center>
-<p>Codes for this part are available in the file: <a href="https://github.com/alice1020/COVID-unemployment-and-income-supports/blob/master/Aggregated_Analysis.R">Aggregated_Analysis.R</a></p>
+<p>Codes for this part are available in the file: <a href="https://github.com/alice1020/COVID-unemployment-and-income-supports/blob/master/Aggregated_Analysis_April.R">Aggregated_Analysis_April.R</a></p>
 </div>
 </div>

@@ -7,13 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Alice Milivinti 2018 powered by Hugo, Pickles</copyright>
-    <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>COVID-19: Unemployment and Income Supports</title>
+      <title>COVID-19: Unemployment and Income Supports June Wave</title>
+      <link>/posts/covid-19-unemployment-and-income-supports-june-wave/</link>
+      <pubDate>Fri, 24 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/covid-19-unemployment-and-income-supports-june-wave/</guid>
+      <description>This is a collaboration with Rebecca Hasdell and David Rehkopf.
+The post provides an updated analysis to the post COVID-19: Unemployment and Income Supports April Wave by including data available until the June wave of the current Population Survey. For more details please refer to the previous post.
+Statistical Exploration We are interested in analyzing the effects of COVID-19 on the employment status with a focus on the Earned Income Tax Credit (EITC).</description>
+    </item>
+    
+    <item>
+      <title>COVID-19: Unemployment and Income Supports April Wave</title>
       <link>/posts/covid-19-unemployment-and-income-supports/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
       
@@ -22,7 +33,7 @@
 Data Sources: Census Current Population Survey (CPS) Source files available: https://github.com/alice1020/COVID-unemployment-and-income-supports
 Data come from the Current Population Survey, which have been download from: https://cps.ipums.org/cps/index.shtml (registration required).
 The codebooks for the extraction are the files:
-Core_2020_Extr_Codebook.xml for the core set of questions for monthly samples from 01-2019 to 04-2020. Variables selected: YEAR, SERIAL, MONTH, HWTFINL, CPSID, ASECFLAG, PERNUM, WTFINL, CPSIDP, EMPSTAT, LABFORCE, OCC, CLASSWKR, UHRSWORKT, UHRSWORK1, UHRSWORK2, AHRSWORKT, AHRSWORK1, AHRSWORK2, EARNWT, HOURWAGE, PAIDHOUR, EARNWEEK, UHRSWORKORG, WKSWORKORG.</description>
+Core_2019_2020_Extr_Codebook.xml for the core set of questions for monthly samples from 01-2019 to 04-2020. Variables selected: YEAR, SERIAL, MONTH, HWTFINL, CPSID, ASECFLAG, PERNUM, WTFINL, CPSIDP, FAMSIZE, NCHILD, ELDCH, YNGCH, EMPSTAT, LABFORCE, OCC, CLASSWKR, UHRSWORKT, UHRSWORK1, UHRSWORK2, AHRSWORKT, AHRSWORK1, AHRSWORK2, MARBASECIDP, LNKFW1MWT, LNKFW1YWT, LNKFW8WT, LNKFWMIS45WT, LNKFWMIS14WT, LNKFWMIS58WT, PANLWT, EARNWT, HOURWAGE, PAIDHOUR, EARNWEEK, UHRSWORKORG, WKSWORKORG.</description>
     </item>
     
     <item>
